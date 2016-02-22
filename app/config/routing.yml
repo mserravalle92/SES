@@ -1,0 +1,7 @@
+siges_control:
+    resource: "@SigesControlBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

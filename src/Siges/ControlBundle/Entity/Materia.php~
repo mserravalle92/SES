@@ -1,0 +1,214 @@
+<?php
+
+namespace SIGES\ControlBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Materia
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class Materia
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="descripcion", type="string", length=255)
+     */
+    private $descripcion;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_profesor", type="integer")
+     */
+    private $idProfesor;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="observaciones", type="string", length=255)
+     */
+    private $observaciones;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_usuario", type="integer")
+     */
+    private $idUsuario;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="modalidad", type="string", length=30)
+     */
+    private $modalidad;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="turno", type="string", length=50)
+     */
+    private $turno;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set descripcion
+     *
+     * @param string $descripcion
+     * @return Materia
+     */
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+
+        return $this;
+    }
+
+    /**
+     * Get descripcion
+     *
+     * @return string 
+     */
+    public function getDescripcion()
+    {
+        return $this->descripcion;
+    }
+
+    /**
+     * Set idProfesor
+     *
+     * @param integer $idProfesor
+     * @return Materia
+     */
+    public function setIdProfesor($idProfesor)
+    {
+        $this->idProfesor = $idProfesor;
+
+        return $this;
+    }
+
+    /**
+     * Get idProfesor
+     *
+     * @return integer 
+     */
+    public function getIdProfesor()
+    {
+        return $this->idProfesor;
+    }
+
+    /**
+     * Set observaciones
+     *
+     * @param string $observaciones
+     * @return Materia
+     */
+    public function setObservaciones($observaciones)
+    {
+        $this->observaciones = $observaciones;
+
+        return $this;
+    }
+
+    /**
+     * Get observaciones
+     *
+     * @return string 
+     */
+    public function getObservaciones()
+    {
+        return $this->observaciones;
+    }
+
+    /**
+     * Set idUsuario
+     *
+     * @param integer $idUsuario
+     * @return Materia
+     */
+    public function setIdUsuario($idUsuario)
+    {
+        $this->idUsuario = $idUsuario;
+
+        return $this;
+    }
+
+    /**
+     * Get idUsuario
+     *
+     * @return integer 
+     */
+    public function getIdUsuario()
+    {
+        return $this->idUsuario;
+    }
+
+    /**
+     * Set modalidad
+     *
+     * @param string $modalidad
+     * @return Materia
+     */
+    public function setModalidad($modalidad)
+    {
+        $this->modalidad = $modalidad;
+
+        return $this;
+    }
+
+    /**
+     * Get modalidad
+     *
+     * @return string 
+     */
+    public function getModalidad()
+    {
+        return $this->modalidad;
+    }
+
+    /**
+     * Set turno
+     *
+     * @param string $turno
+     * @return Materia
+     */
+    public function setTurno($turno)
+    {
+        $this->turno = $turno;
+
+        return $this;
+    }
+
+    /**
+     * Get turno
+     *
+     * @return string 
+     */
+    public function getTurno()
+    {
+        return $this->turno;
+    }
+}

@@ -1,0 +1,19 @@
+siges_control_homepage:
+    path:     /
+    defaults: { _controller: SigesControlBundle:Default:index}
+
+siges_login:
+    path:     /Inicio
+    defaults: { _controller: SigesControlBundle:Default:login }
+
+ver_materias_all:
+    path:     /ver_materias
+    defaults: { _controller: SigesControlBundle:Default:verMaterias}
+
+filtrar_materias:
+    path:     /filtro_materias
+    defaults: { _controller: SigesControlBundle:Default:filtrar_materias}
+
+agregar_clases:
+    path:     /Inicio/Clases
+    defaults: { _controller: SigesControlBundle:Default:agregarClases}                

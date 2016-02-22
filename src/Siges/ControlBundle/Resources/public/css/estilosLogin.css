@@ -1,0 +1,47 @@
+body,html{
+	background-color: #eee;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.cabecera{
+	background-color:#eee;
+}
+
+.login{
+	text-align: center;
+}
+
+.input-group{
+	width: 200px;
+}
+
+.contenido{
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+}
+
+.olvido-pass{
+	text-align: center;
+}
+
+.massoft{
+	height: 50px;
+	width: 50px;
+}
+
+.pie-de-pagina{
+	height: 8%;
+	width: 100%;
+	background-color: #222;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	color:white;
+}
+
+.pie-de-pagina a{
+	color:red;
+}

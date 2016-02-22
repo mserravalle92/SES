@@ -1,0 +1,25 @@
+<table class='table table-striped table-hover table-bordered' style="text-align:center">
+    <thead >
+    <tr >
+        <th style="text-align:center" >Materia</th>
+        <th style="text-align:center">Curso</th>
+        <th style="text-align:center">Turno</th>
+        <th style="text-align:center">Horario</th>
+        <th style="text-align:center">Profesor</th>
+        <th style="text-align:center">Editar</th>
+    </tr>
+    </thead>
+    <tbody>
+    {%for materia in materias%}
+    <tr>
+        <td>{{materia.descripcion}}</td>
+        <td>{{materia.anio}} - {{materia.ciclo}}</td>
+        <td>{{materia.turno}}</td>
+        <td>{{materia.desde|date("H:i")}} - {{materia.hasta|date("H:i")}}</td>
+        <td>{{materia.nombre}}</td>
+        
+        <td><button type="submit" class="btn btn-xs btn-success"><span class="glyphicon glyphicon-pencil"></span></button></td>
+    </tr>
+    {%endfor%}
+    </tbody>
+</table>

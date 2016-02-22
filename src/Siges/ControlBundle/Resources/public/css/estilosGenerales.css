@@ -1,0 +1,39 @@
+.logo-siges{
+    height: 45px;
+    position: absolute;
+    top: 0;
+}
+
+body,html {
+    height: 100%;
+}
+
+.badge{
+    alignment-adjust: central;
+}
+
+//.navegacion {
+//    background: #eee;
+//}
+
+.navegacion ul li a:hover{
+    background-color: #337ab7;
+    color:white;
+}
+
+.title{
+    text-align: center;
+}
+
+.navbar{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.nav-left:hover{
+    background-color: #eee;
+}
+
+th{
+    text-align: center;
+}
